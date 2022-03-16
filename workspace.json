@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "personal-website": "apps/personal-website",
+    "personal-website-e2e": "apps/personal-website-e2e"
+  }
+}
