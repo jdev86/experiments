@@ -1,7 +1,9 @@
 {
   "version": 2,
   "projects": {
+    "express-api": "apps/express-api",
     "personal-website": "apps/personal-website",
-    "personal-website-e2e": "apps/personal-website-e2e"
+    "personal-website-e2e": "apps/personal-website-e2e",
+    "shared-types": "libs/shared-types"
   }
 }
