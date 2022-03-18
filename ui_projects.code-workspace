@@ -1,0 +1,20 @@
+{
+    "folders": [
+        {
+            "name": "root",
+            "path": "."
+        },
+        {
+            "name": "Express API",
+            "path": "./apps/express-api"
+        },
+        {
+            "name": "Personal Website",
+            "path": "./apps/personal-website"
+        },
+        {
+            "name": "Personal Website E2E",
+            "path": "./apps/personal-website-e2e"
+        }
+    ]
+}
