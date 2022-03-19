@@ -8,6 +8,5 @@
     "target": "es2015"
   },
   "exclude": ["**/*.spec.ts", "**/*.test.ts"],
-  "include": ["**/*.ts"],
-  "experimentalDecorators": true,
+  "include": ["**/*.ts"]
 }

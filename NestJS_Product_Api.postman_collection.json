@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "b8110fd7-b8e3-4f8e-9526-57ff2c05a4d4",
+		"name": "NestJS_Product_Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET All Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3333/products",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Single Product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3333/products/{product-id}",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"products",
+						"{product-id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH Update Product",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"string\",\n    \"description\": \"description\",\n    \"price\": 0.00\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3333/products/{product-id}",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"products",
+						"{product-id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Product",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3333/products/{product-id}",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"products",
+						"{product-id}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseurl",
+			"value": "localhost:4001",
+			"type": "default"
+		}
+	]
+}
