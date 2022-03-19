@@ -1,5 +1,5 @@
 module.exports = {
-  displayName: 'graphql-api',
+  displayName: 'nestjs-api',
   preset: '../../jest.preset.js',
   globals: {
     'ts-jest': {
@@ -11,5 +11,5 @@ module.exports = {
     '^.+\\.[tj]s$': 'ts-jest',
   },
   moduleFileExtensions: ['ts', 'js', 'html'],
-  coverageDirectory: '../../coverage/apps/graphql-api',
+  coverageDirectory: '../../coverage/apps/nestjs-api',
 };

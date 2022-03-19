@@ -14,8 +14,8 @@ describe('AppService', () => {
   });
 
   describe('getData', () => {
-    it('should return "Welcome to graphql-api!"', () => {
-      expect(service.getData()).toEqual({ message: 'Welcome to graphql-api!' });
+    it('should return "Welcome to nestjs-api!"', () => {
+      expect(service.getData()).toEqual({ message: 'Welcome to nestjs-api!' });
     });
   });
 });

@@ -1,16 +1,16 @@
 {
-  "root": "apps/graphql-api",
-  "sourceRoot": "apps/graphql-api/src",
+  "root": "apps/nestjs-api",
+  "sourceRoot": "apps/nestjs-api/src",
   "projectType": "application",
   "targets": {
     "build": {
       "executor": "@nrwl/node:webpack",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/graphql-api",
-        "main": "apps/graphql-api/src/main.ts",
-        "tsConfig": "apps/graphql-api/tsconfig.app.json",
-        "assets": ["apps/graphql-api/src/assets"]
+        "outputPath": "dist/apps/nestjs-api",
+        "main": "apps/nestjs-api/src/main.ts",
+        "tsConfig": "apps/nestjs-api/tsconfig.app.json",
+        "assets": ["apps/nestjs-api/src/assets"]
       },
       "configurations": {
         "production": {
@@ -19,8 +19,8 @@
           "inspect": false,
           "fileReplacements": [
             {
-              "replace": "apps/graphql-api/src/environments/environment.ts",
-              "with": "apps/graphql-api/src/environments/environment.prod.ts"
+              "replace": "apps/nestjs-api/src/environments/environment.ts",
+              "with": "apps/nestjs-api/src/environments/environment.prod.ts"
             }
           ]
         }
@@ -29,21 +29,21 @@
     "serve": {
       "executor": "@nrwl/node:node",
       "options": {
-        "buildTarget": "graphql-api:build"
+        "buildTarget": "nestjs-api:build"
       }
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/graphql-api/**/*.ts"]
+        "lintFilePatterns": ["apps/nestjs-api/**/*.ts"]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/graphql-api"],
+      "outputs": ["coverage/apps/nestjs-api"],
       "options": {
-        "jestConfig": "apps/graphql-api/jest.config.js",
+        "jestConfig": "apps/nestjs-api/jest.config.js",
         "passWithNoTests": true
       }
     }

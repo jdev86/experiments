@@ -14,10 +14,10 @@ describe('AppController', () => {
   });
 
   describe('getData', () => {
-    it('should return "Welcome to graphql-api!"', () => {
+    it('should return "Welcome to nestjs-api!"', () => {
       const appController = app.get<AppController>(AppController);
       expect(appController.getData()).toEqual({
-        message: 'Welcome to graphql-api!',
+        message: 'Welcome to nestjs-api!',
       });
     });
   });
