@@ -29,7 +29,7 @@
     "serve": {
       "executor": "@nrwl/node:node",
       "options": {
-        "buildTarget": "express-api:build"
+        "buildTarget": "express-go-api:build"
       }
     },
     "lint": {

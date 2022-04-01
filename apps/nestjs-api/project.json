@@ -29,7 +29,7 @@
     "serve": {
       "executor": "@nrwl/node:node",
       "options": {
-        "buildTarget": "nestjs-api:build"
+        "buildTarget": "nestjs-go-api:build"
       }
     },
     "lint": {

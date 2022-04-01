@@ -4,9 +4,13 @@
     "example-ecommerce": "apps/example-ecommerce",
     "example-ecommerce-e2e": "apps/example-ecommerce-e2e",
     "express-api": "apps/express-api",
+    "go-api": "apps/go-api",
     "nestjs-api": "apps/nestjs-api",
     "personal-website": "apps/personal-website",
     "personal-website-e2e": "apps/personal-website-e2e",
     "shared-types": "libs/shared-types"
+  },
+  "docker": {
+    "executor": "@nx-tools/nx-docker:build"
   }
 }

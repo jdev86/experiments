@@ -13,6 +13,10 @@
             "path": "./apps/nestjs-api"
         },
         {
+            "name": "GO API",
+            "path": "./apps/go-api"
+        },
+        {
             "name": "Personal Website",
             "path": "./apps/personal-website"
         },
