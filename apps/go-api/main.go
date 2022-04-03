@@ -1,10 +1,14 @@
 package main
 
 import (
+	"encoding/base64"
 	"fmt"
 	"io/ioutil"
 	"log"
 	"net/http"
+	"os"
+
+	"github.com/joho/godotenv"
 )
 
 type Response struct {
@@ -32,6 +36,34 @@ func enableCors(w *http.ResponseWriter) {
 	(*w).Header().Set("Access-Control-Allow-Origin", "*")
 }
 
+// use godot package to load/read the .env file and
+// return the value of the key
+func goDotEnvVariable(key string) string {
+
+	// load .env file
+	err := godotenv.Load(".env")
+
+	if err != nil {
+		log.Fatalf("Error loading .env file")
+	}
+
+	return os.Getenv(key)
+}
+
+func decodeApiKey(k string) (apiKey string) {
+	sDec, err := base64.StdEncoding.DecodeString(k)
+
+	if err != nil {
+		fmt.Print(err.Error())
+	}
+
+	fmt.Println(string(sDec))
+
+	apiKey = string(sDec)
+
+	return
+}
+
 func weatherInfo(w http.ResponseWriter, r *http.Request) {
 	enableCors(&w)
 
@@ -49,7 +81,7 @@ func weatherInfo(w http.ResponseWriter, r *http.Request) {
 	}
 
 	req.Header.Add("X-RapidAPI-Host", "weatherapi-com.p.rapidapi.com")
-	req.Header.Add("X-RapidAPI-Key", "8f89637800msh1c0ab6a3d2accefp1ec93ejsnfb9bc7fd006b")
+	req.Header.Add("X-RapidAPI-Key", decodeApiKey(goDotEnvVariable("API_KEY")))
 
 	res, _ := http.DefaultClient.Do(req)
 
