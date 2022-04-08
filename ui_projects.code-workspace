@@ -17,6 +17,14 @@
             "path": "./apps/go-api"
         },
         {
+            "name": "Example Ecommerce",
+            "path": "./apps/example-ecommerce"
+        },
+        {
+            "name": "Example Ecommerce E2E",
+            "path": "./apps/example-ecommerce-e2e"
+        },
+        {
             "name": "Personal Website",
             "path": "./apps/personal-website"
         },

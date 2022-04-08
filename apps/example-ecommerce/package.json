@@ -1,5 +1,11 @@
 {
   "name": "example-ecommerce",
   "version": "0.0.1",
-  "description": "Nx Solid example-ecommerce app"
+  "description": "Nx Solid example-ecommerce app",
+  "dependencies": {
+    "solid-app-router": "^0.3.2"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.0.23"
+  }
 }
