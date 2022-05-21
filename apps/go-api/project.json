@@ -1,5 +1,4 @@
 {
-  "root": "apps/go-api",
   "projectType": "application",
   "sourceRoot": "apps/go-api",
   "targets": {

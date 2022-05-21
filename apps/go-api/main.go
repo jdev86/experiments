@@ -36,6 +36,8 @@ func enableCors(w *http.ResponseWriter) {
 }
 
 func weatherInfo(w http.ResponseWriter, r *http.Request) {
+	endpoint := "weatherapi-com.p.rapidapi.com"
+
 	enableCors(&w)
 
 	fmt.Println("Calling API...")
@@ -43,7 +45,7 @@ func weatherInfo(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(http.StatusCreated)
 	w.Header().Set("Content-Type", "application/json")
 
-	url := "https://weatherapi-com.p.rapidapi.com/forecast.json?q=76226&days=3"
+	url := "https://" + endpoint + "/forecast.json?q=76226&days=3"
 
 	req, err := http.NewRequest("GET", url, nil)
 
@@ -51,7 +53,7 @@ func weatherInfo(w http.ResponseWriter, r *http.Request) {
 		fmt.Print(err.Error())
 	}
 
-	req.Header.Add("X-RapidAPI-Host", "weatherapi-com.p.rapidapi.com")
+	req.Header.Add("X-RapidAPI-Host", endpoint)
 	req.Header.Add("X-RapidAPI-Key", decodebase64.DecodeBase64Value(readenv.ViperEnvVariable("API_KEY")))
 
 	res, _ := http.DefaultClient.Do(req)

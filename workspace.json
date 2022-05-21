@@ -1,13 +1,13 @@
 {
   "version": 2,
   "projects": {
-    "example-ecommerce": "apps/example-ecommerce",
-    "example-ecommerce-e2e": "apps/example-ecommerce-e2e",
+    "daily-feed-app": "apps/daily-feed-app",
+    "daily-feed-app-e2e": "apps/daily-feed-app-e2e",
     "express-api": "apps/express-api",
     "go-api": "apps/go-api",
     "nestjs-api": "apps/nestjs-api",
-    "personal-website": "apps/personal-website",
-    "personal-website-e2e": "apps/personal-website-e2e",
+    "react-native-app": "apps/react-native-app",
+    "react-native-app-e2e": "apps/react-native-app-e2e",
     "shared-types": "libs/shared-types"
   },
   "docker": {

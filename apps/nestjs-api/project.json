@@ -1,5 +1,4 @@
 {
-  "root": "apps/nestjs-api",
   "sourceRoot": "apps/nestjs-api/src",
   "projectType": "application",
   "targets": {
@@ -29,7 +28,7 @@
     "serve": {
       "executor": "@nrwl/node:node",
       "options": {
-        "buildTarget": "nestjs-go-api:build"
+        "buildTarget": "nestjs-api:build"
       }
     },
     "lint": {
@@ -43,7 +42,7 @@
       "executor": "@nrwl/jest:jest",
       "outputs": ["coverage/apps/nestjs-api"],
       "options": {
-        "jestConfig": "apps/nestjs-api/jest.config.js",
+        "jestConfig": "apps/nestjs-api/jest.config.ts",
         "passWithNoTests": true
       }
     }

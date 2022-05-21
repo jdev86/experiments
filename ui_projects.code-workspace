@@ -5,32 +5,28 @@
             "path": "."
         },
         {
-            "name": "Express API",
-            "path": "./apps/express-api"
-        },
-        {
             "name": "NestJS API",
             "path": "./apps/nestjs-api"
+        },
+        {
+            "name": "React Native App",
+            "path": "./apps/react-native-app"
+        },
+        {
+            "name": "Express API",
+            "path": "./apps/express-api"
         },
         {
             "name": "GO API",
             "path": "./apps/go-api"
         },
         {
-            "name": "Example Ecommerce",
-            "path": "./apps/example-ecommerce"
+            "name": "Daily Feed App",
+            "path": "./apps/daily-feed-app"
         },
         {
-            "name": "Example Ecommerce E2E",
-            "path": "./apps/example-ecommerce-e2e"
-        },
-        {
-            "name": "Personal Website",
-            "path": "./apps/personal-website"
-        },
-        {
-            "name": "Personal Website E2E",
-            "path": "./apps/personal-website-e2e"
+            "name": "Daily Feed App E2E",
+            "path": "./apps/daily-feed-app-e2e"
         }
     ]
 }

@@ -1,5 +1,4 @@
 {
-  "root": "apps/express-api",
   "sourceRoot": "apps/express-api/src",
   "projectType": "application",
   "targets": {
@@ -43,7 +42,7 @@
       "executor": "@nrwl/jest:jest",
       "outputs": ["coverage/apps/express-api"],
       "options": {
-        "jestConfig": "apps/express-api/jest.config.js",
+        "jestConfig": "apps/express-api/jest.config.ts",
         "passWithNoTests": true
       }
     }
