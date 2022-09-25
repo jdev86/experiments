@@ -15,7 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@nextjs-monorepo/shared-types": ["libs/shared-types/src/index.ts"]
+      "@nextjs-monorepo/shared-types": ["libs/shared-types/src/index.ts"],
+      "#nestjs-api/*": ["apps/nestjs-api/src/app/*"],
+      "#pokemon/*": ["apps/nestjs-api/src/pokemon/*"],
+      "#weather/*": ["apps/nestjs-api/src/weather/*"]
     }
   },
   "exclude": ["node_modules", "tmp"]

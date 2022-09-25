@@ -1,11 +1,13 @@
+import WeatherModule from '#weather/module';
 import { Module } from '@nestjs/common';
+import PokemonModule from '../pokemon/module';
 
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
+import AppController from './app.controller';
+import AppService from './app.service';
 
 @Module({
-  imports: [],
+  imports: [PokemonModule, WeatherModule],
   controllers: [AppController],
   providers: [AppService],
 })
-export class AppModule {}
+export default class AppModule {}

@@ -28,5 +28,10 @@
             "name": "Daily Feed App E2E",
             "path": "./apps/daily-feed-app-e2e"
         }
-    ]
+    ],
+    "settings": {
+        "go.lintOnSave": "workspace",
+        "editor.formatOnSave": false,
+        "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    }
 }
