@@ -113,6 +113,7 @@
   "imports": {
     "#nestjs-api/*": "./apps/nestjs-api/src/app/*.ts",
     "#pokemon/*": "./apps/nestjs-api/src/pokemon/*.ts",
-    "#weather/*": "./apps/nestjs-api/src/weather/*.ts"
+    "#weather/*": "./apps/nestjs-api/src/weather/*.ts",
+    "#crypto/*": "./apps/nestjs-api/src/crypto/*.ts"
   }
 }

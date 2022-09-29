@@ -4,7 +4,7 @@ import { Controller, Get, Param, Query } from '@nestjs/common';
 import WeatherService from './service';
 
 @Controller()
-class WeatherController {
+export default class WeatherController {
   // eslint-disable-next-line no-useless-constructor
   constructor(private readonly weatherService: WeatherService) {}
 
@@ -23,5 +23,3 @@ class WeatherController {
     return this.weatherService.getForecastByZip(zip);
   }
 }
-
-export default WeatherController;

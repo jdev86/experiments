@@ -12,7 +12,7 @@ const config = {
 };
 
 @Injectable()
-class WeatherService {
+export default class WeatherService {
   // eslint-disable-next-line class-methods-use-this
   async getWeatherByZip(zip: number): Promise<{ weather: { location: any, current: any, message?: any } }> {
     const weather = await axios
@@ -29,7 +29,7 @@ class WeatherService {
     const astronomy = await axios
       .get(`https://weatherapi-com.p.rapidapi.com/astronomy.json?q=${zip}`, config)
       .then((res) => res.data)
-      .catch(() => `Error fetching astronomy with zipcode ${zip}.  Verify and try again.`);
+      .catch(() => `Error fetching astronomy data with zipcode ${zip}.  Verify and try again.`);
 
     return {
       astronomy,
@@ -40,12 +40,10 @@ class WeatherService {
     const forecast = await axios
       .get(`https://weatherapi-com.p.rapidapi.com/forecast.json?q=${zip}`, config)
       .then((res) => res.data)
-      .catch(() => `Error fetching forecast with zipcode ${zip}.  Verify and try again.`);
+      .catch(() => `Error fetching forecast data with zipcode ${zip}.  Verify and try again.`);
 
     return {
       forecast,
     };
   }
 }
-
-export default WeatherService;

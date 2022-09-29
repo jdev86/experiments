@@ -4,7 +4,7 @@ import { Controller, Get, Param, Query } from '@nestjs/common';
 import PokemonService from './service';
 
 @Controller()
-class PokemonController {
+export default class PokemonController {
   // eslint-disable-next-line no-useless-constructor
   constructor(private readonly pokemonService: PokemonService) {}
 
@@ -18,5 +18,3 @@ class PokemonController {
     return this.pokemonService.getById(name);
   }
 }
-
-export default PokemonController;
