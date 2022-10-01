@@ -12,7 +12,7 @@ const config = {
 };
 
 @Injectable()
-export default class WeatherService {
+export class WeatherService {
   // eslint-disable-next-line class-methods-use-this
   async getWeatherByZip(zip: number): Promise<{ weather: { location: any, current: any, message?: any } }> {
     const weather = await axios

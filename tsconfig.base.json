@@ -15,12 +15,11 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@nextjs-monorepo/shared-types": ["libs/shared-types/src/index.ts"],
+      "#crypto/*": ["apps/nestjs-api/src/crypto/*"],
       "#nestjs-api/*": ["apps/nestjs-api/src/app/*"],
       "#pokemon/*": ["apps/nestjs-api/src/pokemon/*"],
       "#weather/*": ["apps/nestjs-api/src/weather/*"],
-      "#crypto/*": ["apps/nestjs-api/src/crypto/*"]
-
+      "@nextjs-monorepo/shared-types": ["libs/shared-types/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -2,10 +2,10 @@
 import { Controller, Get, Param, Query } from '@nestjs/common';
 import { Params } from '../shared/types';
 
-import CryptoService from './service';
+import { CryptoService } from './service';
 
 @Controller('crypto')
-export default class CryptoController {
+export class CryptoController {
   // eslint-disable-next-line no-useless-constructor
   constructor(private readonly cryptoService: CryptoService) {}
 

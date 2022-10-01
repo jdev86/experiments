@@ -1,10 +1,10 @@
 /* eslint-disable class-methods-use-this */
 import { Controller, Get, Param, Query } from '@nestjs/common';
 
-import WeatherService from './service';
+import { WeatherService } from './service';
 
 @Controller()
-export default class WeatherController {
+export class WeatherController {
   // eslint-disable-next-line no-useless-constructor
   constructor(private readonly weatherService: WeatherService) {}
 

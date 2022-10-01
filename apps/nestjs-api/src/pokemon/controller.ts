@@ -1,10 +1,10 @@
 /* eslint-disable class-methods-use-this */
 import { Controller, Get, Param, Query } from '@nestjs/common';
 
-import PokemonService from './service';
+import { PokemonService } from './service';
 
 @Controller()
-export default class PokemonController {
+export class PokemonController {
   // eslint-disable-next-line no-useless-constructor
   constructor(private readonly pokemonService: PokemonService) {}
 

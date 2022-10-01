@@ -1,13 +1,10 @@
 {
   "version": 2,
   "projects": {
-    "daily-feed-app": "apps/daily-feed-app",
-    "daily-feed-app-e2e": "apps/daily-feed-app-e2e",
-    "express-api": "apps/express-api",
-    "go-api": "apps/go-api",
     "nestjs-api": "apps/nestjs-api",
-    "react-native-app": "apps/react-native-app",
-    "react-native-app-e2e": "apps/react-native-app-e2e",
+    "next-test-app": "apps/next-test-app",
+    "next-test-app-e2e": "apps/next-test-app-e2e",
+    "qwik-app": "apps/qwik-app",
     "shared-types": "libs/shared-types"
   },
   "docker": {

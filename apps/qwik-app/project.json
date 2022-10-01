@@ -1,0 +1,60 @@
+{
+  "sourceRoot": "apps/qwik-app/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nxext/vite:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/apps/qwik-app",
+        "baseHref": "/",
+        "configFile": "apps/qwik-app/vite.config.ts"
+      },
+      "configurations": {
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "apps/qwik-app/src/environments/environment.ts",
+              "with": "apps/qwik-app/src/environments/environment.prod.ts"
+            }
+          ]
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nxext/vite:dev",
+      "options": {
+        "outputPath": "dist/apps/qwik-app",
+        "baseHref": "/",
+        "configFile": "apps/qwik-app/vite.config.ts"
+      },
+      "configurations": {
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "apps/qwik-app/src/environments/environment.ts",
+              "with": "apps/qwik-app/src/environments/environment.prod.ts"
+            }
+          ]
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/qwik-app/**/*.{ts,js,tsx,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/qwik-app"],
+      "options": {
+        "jestConfig": "apps/qwik-app/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

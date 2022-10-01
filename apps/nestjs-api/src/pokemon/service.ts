@@ -4,7 +4,7 @@ import { Injectable } from '@nestjs/common';
 import axios from 'axios';
 
 @Injectable()
-export default class PokemonService {
+export class PokemonService {
   // eslint-disable-next-line class-methods-use-this
   async getByLimit(limit: number): Promise<{ pokemon: string[] }> {
     const defaultLimit = 100;

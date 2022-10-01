@@ -15,7 +15,7 @@ const config = {
 };
 
 @Injectable()
-export default class CryptoService {
+export class CryptoService {
   async getCoins(queryParams?: Partial<Params>): Promise<{ coins: { stats: Stat, coins: Coin[]} }> {
 
     const options = {...config, params: queryParams};

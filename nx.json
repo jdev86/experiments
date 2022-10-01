@@ -18,12 +18,7 @@
     "default": {
       "runner": "nx/tasks-runners/default",
       "options": {
-        "cacheableOperations": [
-          "build",
-          "lint",
-          "test",
-          "e2e"
-        ]
+        "cacheableOperations": ["build", "lint", "test", "e2e"]
       }
     }
   },
@@ -38,12 +33,40 @@
   "generators": {
     "@nrwl/react": {
       "application": {
+        "style": "styled-components",
+        "linter": "eslint",
         "babel": true
+      },
+      "component": {
+        "style": "styled-components"
+      },
+      "library": {
+        "style": "styled-components",
+        "linter": "eslint"
       }
     },
     "@nrwl/next": {
       "application": {
         "style": "styled-components",
+        "linter": "eslint"
+      }
+    },
+    "@nrwl/web:application": {
+      "style": "css",
+      "linter": "eslint",
+      "unitTestRunner": "jest",
+      "e2eTestRunner": "cypress"
+    },
+    "@nrwl/web:library": {
+      "style": "css",
+      "linter": "eslint",
+      "unitTestRunner": "jest"
+    },
+    "@nxext/vite": {
+      "application": {
+        "linter": "eslint"
+      },
+      "library": {
         "linter": "eslint"
       }
     }

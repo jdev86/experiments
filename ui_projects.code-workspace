@@ -9,25 +9,9 @@
             "path": "./apps/nestjs-api"
         },
         {
-            "name": "React Native App",
-            "path": "./apps/react-native-app"
+            "name": "Qwik App",
+            "path": "./apps/qwik-app"
         },
-        {
-            "name": "Express API",
-            "path": "./apps/express-api"
-        },
-        {
-            "name": "GO API",
-            "path": "./apps/go-api"
-        },
-        {
-            "name": "Daily Feed App",
-            "path": "./apps/daily-feed-app"
-        },
-        {
-            "name": "Daily Feed App E2E",
-            "path": "./apps/daily-feed-app-e2e"
-        }
     ],
     "settings": {
         "go.lintOnSave": "workspace",
