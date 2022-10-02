@@ -34,7 +34,7 @@ export default component$(() => {
           </a>
         </li>
         <li>
-          <a href="https://qwik.builder.io/examples/introduction/hello-world/" target="_blank">
+          <a href="https://github.com/jdev86" target="_blank" style={{ verticalAlign: "middle", marginLeft: "-12px" }}>
             <GithubLogo />
           </a>
         </li>
