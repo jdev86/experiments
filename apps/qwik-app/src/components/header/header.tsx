@@ -1,6 +1,5 @@
 import { component$, useStylesScoped$ } from '@builder.io/qwik';
-import React from 'react';
-import { QwikLogo } from '../icons/qwik';
+import { GithubLogo } from '../icons/github';
 import styles from './header.css?inline';
 
 export default component$(() => {
@@ -8,25 +7,35 @@ export default component$(() => {
 
   return (
     <header>
-      <div class="logo">
-        <a href="https://qwik.builder.io/" target="_blank">
-          <QwikLogo />
+      <div class="logo" >
+        <a
+          style={{ background: "linear-gradient(to right, #000000, #F53D3D)",
+                  backgroundSize: "100% 100%",
+                  backgroundPosition: "0% 0%",
+                  WebkitBackgroundClip: 'text',
+                  backgroundClip: "text",
+                  color: "transparent",
+                  fontWeight: "bold",
+                  marginTop: "0.5rem"
+                }}
+          href="/">
+          Justin Mills Website
         </a>
       </div>
       <ul>
         <li>
-          <a href="https://qwik.builder.io/docs/components/overview/" target="_blank">
-            Docs
+          <a href="/weather">
+            Weather
+          </a>
+        </li>
+        <li>
+          <a href="/resume">
+            Resume
           </a>
         </li>
         <li>
           <a href="https://qwik.builder.io/examples/introduction/hello-world/" target="_blank">
-            Examples
-          </a>
-        </li>
-        <li>
-          <a href="https://qwik.builder.io/tutorial/welcome/overview/" target="_blank">
-            Tutorials
+            <GithubLogo />
           </a>
         </li>
       </ul>

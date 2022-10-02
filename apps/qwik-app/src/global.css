@@ -20,7 +20,8 @@ body {
 }
 
 main {
-  max-width: 760px;
+  max-width: 100%;
+  min-height: 1000px;
   margin: 0 auto;
   background-color: white;
   border-radius: 5px;

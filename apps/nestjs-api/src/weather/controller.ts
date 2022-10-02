@@ -1,5 +1,5 @@
 /* eslint-disable class-methods-use-this */
-import { Controller, Get, Param, Query } from '@nestjs/common';
+import { Controller, Get, Param, Query, Res } from '@nestjs/common';
 
 import { WeatherService } from './service';
 
@@ -9,7 +9,7 @@ export class WeatherController {
   constructor(private readonly weatherService: WeatherService) {}
 
   @Get('weather/:zip')
-  getWeatherByZip(@Param('zip') zip: number): unknown {
+  async getWeatherByZip(@Param('zip') zip: number): Promise<unknown> {
     return this.weatherService.getWeatherByZip(zip);
   }
 

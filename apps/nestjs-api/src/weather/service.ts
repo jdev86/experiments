@@ -1,5 +1,5 @@
 /* eslint-disable class-methods-use-this */
-import { Injectable } from '@nestjs/common';
+import { Injectable, NotFoundException } from '@nestjs/common';
 
 import axios from 'axios';
 
@@ -18,7 +18,7 @@ export class WeatherService {
     const weather = await axios
       .get(`https://weatherapi-com.p.rapidapi.com/current.json?q=${zip}`, config)
       .then((res) => res.data)
-      .catch(() => `Error fetching weather with zipcode ${zip}.  Verify and try again.`);
+      .catch(() => { throw new NotFoundException(`Unable to fetch weather data with zipcode ${zip}.  Verify and try again.`) });
 
     return {
       weather,
@@ -29,7 +29,7 @@ export class WeatherService {
     const astronomy = await axios
       .get(`https://weatherapi-com.p.rapidapi.com/astronomy.json?q=${zip}`, config)
       .then((res) => res.data)
-      .catch(() => `Error fetching astronomy data with zipcode ${zip}.  Verify and try again.`);
+      .catch(() => `Unable to fetch astronomy data with zipcode ${zip}.  Verify and try again.`);
 
     return {
       astronomy,
@@ -40,7 +40,7 @@ export class WeatherService {
     const forecast = await axios
       .get(`https://weatherapi-com.p.rapidapi.com/forecast.json?q=${zip}`, config)
       .then((res) => res.data)
-      .catch(() => `Error fetching forecast data with zipcode ${zip}.  Verify and try again.`);
+      .catch(() => `Unable to fetch forecast data with zipcode ${zip}.  Verify and try again.`);
 
     return {
       forecast,

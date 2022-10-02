@@ -2,8 +2,6 @@
   "version": 2,
   "projects": {
     "nestjs-api": "apps/nestjs-api",
-    "next-test-app": "apps/next-test-app",
-    "next-test-app-e2e": "apps/next-test-app-e2e",
     "qwik-app": "apps/qwik-app",
     "shared-types": "libs/shared-types"
   },
