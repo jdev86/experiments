@@ -6,10 +6,10 @@ export default component$(() => {
   useStylesScoped$(styles);
 
   return (
-    <header>
+    <header style={{background: "linear-gradient(to right, #546a7c, #255175, #11a2bf)"}}>
       <div class="logo" >
         <a
-          style={{ background: "linear-gradient(to right, #000000, #F53D3D)",
+          style={{ background: "linear-gradient(to right, #546a7c, #255175, #11a2bf)",
                   backgroundSize: "100% 100%",
                   backgroundPosition: "0% 0%",
                   WebkitBackgroundClip: 'text',

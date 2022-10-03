@@ -19,7 +19,7 @@
       "#nestjs-api/*": ["apps/nestjs-api/src/app/*"],
       "#pokemon/*": ["apps/nestjs-api/src/pokemon/*"],
       "#weather/*": ["apps/nestjs-api/src/weather/*"],
-      "@nextjs-monorepo/shared-types": ["libs/shared-types/src/index.ts"]
+      "@personal-website-monorepo/shared-types": ["libs/shared-types/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

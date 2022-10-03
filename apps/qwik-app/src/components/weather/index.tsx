@@ -1,4 +1,4 @@
-import { component$, Resource, useResource$, useStore, useWatch$ } from "@builder.io/qwik";
+import { component$, Resource, useResource$, useStore } from "@builder.io/qwik";
 
 export const WeatherComponent = component$(() => {
   const store = useStore({
@@ -13,19 +13,25 @@ export const WeatherComponent = component$(() => {
   });
 
   return (
-    <div style={{ verticalAlign: "center"}}>
-      <h2 style={{display: "flex"}}>Displaying weather for <input name="zip" style={{ marginLeft: "0.5rem" }} value={store.zip} onKeyUp$={(ev: any) => (store.zip = ev.target.value)} placeholder="Enter Zipcode" />
-</h2>
+    <div style={{ verticalAlign: "center" }}>
+      <h2
+        style={{display: "flex"}}>
+          Displaying weather for <input name="zip" style={{ marginLeft: "0.5rem" }} value={store.zip} onKeyUp$={(ev: any) => (store.zip = ev.target.value)} placeholder="Enter Zipcode" />
+      </h2>
       <Resource
         value={weatherResource}
         onPending={() => <div>Loading...</div>}
         onRejected={() => <div>Weather for {store.zip} not found. Please try another zipcode.</div>}
         onResolved={(data) => {
-          console.log({data})
           if(data.error) {
             return <div>{data.message}</div>
           }
-          return <div>Temperature: {data?.weather.current.feelslike_f}</div>;
+          return (
+            <>
+              <div>City: {data.weather.location.name}, {data.weather.location.country}</div>
+              <div>Temperature: {data?.weather.current.feelslike_f}° F</div>
+            </>
+          )
         }}
       />
     </div>

@@ -4,7 +4,6 @@ header {
 header {
   display: flex;
   background: white;
-  border-bottom: 10px solid var(--qwik-dark-purple);
 }
 
 header .logo a {

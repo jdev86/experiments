@@ -6,9 +6,16 @@ import { QwikLogo } from '../components/icons/qwik'
 export default component$(() => {
   return (
     <>
-      <main>
+      <main style={{ height: "100vh",           backgroundColor: "slategrey",
+ }}>
         <Header />
-        <section>
+        <section style={{
+          height: "100vh",
+          borderTop: "10px solid transparent",
+          // borderImage: "linear-gradient(to right, #a57308, #c47713, #eda923)",
+          borderImage: "linear-gradient(to right, #032642, #05518e, #0d73c6)",
+          borderImageSlice: 1
+          }}>
           <Slot />
         </section>
       </main>
