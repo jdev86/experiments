@@ -6,18 +6,15 @@ export default component$(() => {
   return (
     <div>
       <h1>
-        Welcome to Qwik <span class="lightning">⚡️</span>
+        Welcome to My Website <span class="lightning">⚡️</span>
       </h1>
 
       <ul>
         <li>
-          Check out the <code>src/routes</code> directory to get started.
+          It's been built with Qwik and NestJS.
         </li>
         <li>
-          Add integrations with <code>npm run qwik add</code>.
-        </li>
-        <li>
-          More info about development in <code>README.md</code>
+          From here you can access <Link href="/weather"><code>local weather</code></Link>, up-to-date <Link href="/crypto"><code>crypto</code></Link> information, and my current <Link href="/resume"><code>resume</code></Link>.
         </li>
       </ul>
 
@@ -98,29 +95,6 @@ export default component$(() => {
         </tr>
       </table>
 
-      <h2>Community</h2>
-
-      <ul>
-        <li>
-          <span>Questions or just want to say hi? </span>
-          <a href="https://qwik.builder.io/chat" target="_blank">
-            Chat on discord!
-          </a>
-        </li>
-        <li>
-          <span>Follow </span>
-          <a href="https://twitter.com/QwikDev" target="_blank">
-            @QwikDev
-          </a>
-          <span> on Twitter</span>
-        </li>
-        <li>
-          <span>Open issues and contribute on </span>
-          <a href="https://github.com/BuilderIO/qwik" target="_blank">
-            Github
-          </a>
-        </li>
-      </ul>
       <Link class="mindblow" href="/flower">
         Blow my mind 🤯
       </Link>

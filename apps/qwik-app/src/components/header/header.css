@@ -29,6 +29,7 @@ header li a {
   display: inline-block;
   padding: 15px 10px;
   text-decoration: none;
+  color: #1155a3
 }
 
 header li a:hover {

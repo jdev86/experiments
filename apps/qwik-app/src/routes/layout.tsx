@@ -1,19 +1,24 @@
-import { component$, Slot } from '@builder.io/qwik';
+import { component$, Slot, useStore } from '@builder.io/qwik';
 import { NXLogo } from '~/components/icons/nx';
 import Header from '../components/header/header';
 import { QwikLogo } from '../components/icons/qwik'
 
 export default component$(() => {
+  interface TimeStore {
+    hours: number
+  }
+  const store = useStore<TimeStore>( { hours: new Date().getHours() });
+
+  const border = store.hours < 12 ? "linear-gradient(to right, #032642, #05518e, #0d73c6)" : "linear-gradient(to right, #ed692d, #f2b04d, #efc36b)"
+
   return (
     <>
-      <main style={{ height: "100vh",           backgroundColor: "slategrey",
- }}>
-        <Header />
+      <main style={{ height: "100%", backgroundColor: "slategrey" }}>
+        <Header hours={store.hours} />
         <section style={{
-          height: "100vh",
+          height: "100%",
           borderTop: "10px solid transparent",
-          // borderImage: "linear-gradient(to right, #a57308, #c47713, #eda923)",
-          borderImage: "linear-gradient(to right, #032642, #05518e, #0d73c6)",
+          borderImage: `${border}`,
           borderImageSlice: 1
           }}>
           <Slot />
