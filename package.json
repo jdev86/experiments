@@ -51,7 +51,7 @@
     "@nrwl/workspace": "15.4.5",
     "@nx-go/nx-go": "^2.4.0",
     "@nx-plugins/vite": "^0.0.19",
-    "@nx-tools/nx-docker": "^2.3.0",
+    "@nx-tools/nx-docker": "^3.0.8",
     "@swc/core": "~1.2.143",
     "@swc/jest": "0.2.20",
     "@testing-library/jest-dom": "5.16.5",
