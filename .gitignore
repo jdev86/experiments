@@ -105,3 +105,6 @@ buck-out/
 node_modules/
 
 apps/react-native-app-e2e/artifacts
+
+# Next.js
+.next
