@@ -13,13 +13,14 @@ export default component$(() => {
 
   return (
     <>
-      <main style={{ height: "100%", backgroundColor: "slategrey" }}>
+      <main style={{ height: "100vh", backgroundColor: "slategrey" }}>
         <Header hours={store.hours} />
         <section style={{
           height: "100%",
           borderTop: "10px solid transparent",
           borderImage: `${border}`,
-          borderImageSlice: 1
+          borderImageSlice: 1,
+          backgroundImage: ''
           }}>
           <Slot />
         </section>

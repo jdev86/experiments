@@ -14,7 +14,7 @@ export const CryptoComponent = component$(() => {
   });
 
   return (
-    <div style={{ verticalAlign: "center" }}>
+    <div>
       <h2
         style={{display: "flex"}}>
           Top 50 Crypto Coins
