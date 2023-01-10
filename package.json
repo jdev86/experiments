@@ -70,7 +70,7 @@
     "babel-plugin-styled-components": "1.10.7",
     "cypress": "^11.0.0",
     "detox": "20.0.3",
-    "eslint": "8.15.0",
+    "eslint": "8.31.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-next": "13.1.1",
     "eslint-config-prettier": "^8.1.0",
