@@ -85,7 +85,7 @@
     "jest-circus": "27.5.1",
     "jest-environment-jsdom": "28.1.1",
     "metro": "0.70.2",
-    "metro-babel-register": "0.70.2",
+    "metro-babel-register": "0.74.0",
     "metro-react-native-babel-preset": "0.70.2",
     "metro-resolver": "0.70.2",
     "nx": "15.4.5",
