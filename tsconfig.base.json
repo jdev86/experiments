@@ -15,10 +15,6 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "#crypto/*": ["apps/nestjs-api/src/crypto/*"],
-      "#nestjs-api/*": ["apps/nestjs-api/src/app/*"],
-      "#pokemon/*": ["apps/nestjs-api/src/pokemon/*"],
-      "#weather/*": ["apps/nestjs-api/src/weather/*"],
       "@personal-website-monorepo/shared-types": ["libs/shared-types/src/index.ts"]
     }
   },

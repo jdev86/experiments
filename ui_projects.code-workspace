@@ -6,7 +6,7 @@
         },
         {
             "name": "NestJS API",
-            "path": "./apps/nestjs-api"
+            "path": "./apps/nest-api"
         },
         {
             "name": "Qwik App",
