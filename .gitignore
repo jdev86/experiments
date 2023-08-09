@@ -1,13 +1,13 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # compiled output
-/dist
+dist
 /tmp
 /out-tsc
 bin/
 
 # dependencies
-/node_modules
+node_modules
 
 # IDEs and editors
 /.idea
@@ -108,3 +108,7 @@ apps/react-native-app-e2e/artifacts
 
 # Next.js
 .next
+# Remix files
+apps/**/build
+apps/**/.cache
+  
